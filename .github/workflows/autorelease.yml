@@ -1,4 +1,4 @@
-name: autorelease
+name: Do automatic release
 
 on:
   schedule:
@@ -20,6 +20,7 @@ jobs:
           API_CONTENT=$(curl -sL https://api.github.com/repos/nodejs/node/releases/latest)
           echo "::set-output name=tag::$(echo "$API_CONTENT" | jq -r '.tag_name')"
           echo "::set-output name=url::$(echo "$API_CONTENT" | jq -r '.html_url')"
+          echo "::set-output name=version::$(echo "$API_CONTENT" | jq -r '.tag_name' | cut -c2- )"
 
       - name: Getting last similar release tag...
         id: similar_release_tag
@@ -103,7 +104,7 @@ jobs:
               "extra": {
                 "mariusbuescher": {
                   "node-composer": {
-                    "node-version": "${{ steps.last_node_release.outputs.tag }}",
+                    "node-version": "${{ steps.last_node_release.outputs.version }}",
                   }
                 }
               }
