@@ -100,12 +100,8 @@ jobs:
               "require": {
                 "mariusbuescher/node-composer": ">1.2.2"
               },
-              "extra": {
-                "mariusbuescher": {
-                  "node-composer": {
-                    "node-version": "${{ steps.last_node_release.outputs.version }}",
-                  }
-                }
+              "provide": {
+                "nodejs": "${{ steps.last_node_release.outputs.version }}"
               }
             }
 
