@@ -1,4 +1,4 @@
-name: Do automatic release
+name: Autorelease
 
 on:
   schedule:
