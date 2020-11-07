@@ -1,0 +1,28 @@
+{
+  "name": "imponeer/composer-nodejs-installer",
+  "type": "library",
+  "description": "Installs specific nodejs version in vendor/",
+  "license": "MIT",
+  "keywords": [
+    "node.js",
+    "npm",
+    "frontend",
+    "javascript"
+  ],
+  "authors": [
+    {
+        "name": "Raimondas Rimkevičius",
+        "email": "github@mekdrop.name"
+    }
+  ],
+  "require": {
+    "mariusbuescher/node-composer": ">1.2.2"
+  },
+  "extra": {
+    "mariusbuescher": {
+      "node-composer": {
+        "node-version": "15.1.0",
+      }
+    }
+  }
+}
