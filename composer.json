@@ -18,11 +18,7 @@
   "require": {
     "mariusbuescher/node-composer": ">1.2.2"
   },
-  "extra": {
-    "mariusbuescher": {
-      "node-composer": {
-        "node-version": "15.1.0"
-      }
-    }
+  "provide": {
+    "nodejs": "15.1.0"
   }
 }
