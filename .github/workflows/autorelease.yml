@@ -87,6 +87,8 @@ jobs:
               "license": "MIT",
               "keywords": [
                 "node.js",
+                "nodejs",
+                "node",
                 "npm",
                 "frontend",
                 "javascript"
@@ -101,7 +103,7 @@ jobs:
                 "mariusbuescher/node-composer": ">1.2.2"
               },
               "provide": {
-                "nodejs": "${{ steps.last_node_release.outputs.version }}"
+                "nodejs/node": "${{ steps.last_node_release.outputs.version }}"
               }
             }
 
