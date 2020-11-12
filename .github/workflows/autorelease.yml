@@ -82,6 +82,7 @@ jobs:
           contents: |
             {
               "name": "imponeer/composer-nodejs-installer",
+              "version": "${{ steps.new_release_tag.outputs.value }}",
               "type": "metapackage",
               "description": "Installs specific nodejs version in vendor/",
               "license": "MIT",
