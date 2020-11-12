@@ -1,6 +1,6 @@
 {
   "name": "imponeer/composer-nodejs-installer",
-  "type": "library",
+  "type": "metapackage",
   "description": "Installs specific nodejs version in vendor/",
   "license": "MIT",
   "keywords": [
@@ -21,6 +21,6 @@
     "mariusbuescher/node-composer": ">1.2.2"
   },
   "provide": {
-    "nodejs/node": "15.1.0"
+    "nodejs/node": "15.2.0"
   }
 }
