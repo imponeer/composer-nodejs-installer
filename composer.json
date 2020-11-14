@@ -1,6 +1,5 @@
 {
   "name": "imponeer/composer-nodejs-installer",
-  "version": "v15.2.0-2",
   "type": "metapackage",
   "description": "Installs specific nodejs version in vendor/",
   "license": "MIT",
