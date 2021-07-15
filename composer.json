@@ -21,6 +21,6 @@
     "mariusbuescher/node-composer": ">1.2.2"
   },
   "provide": {
-    "nodejs/node": "14.17.3"
+    "nodejs/node": "16.5.0"
   }
 }
